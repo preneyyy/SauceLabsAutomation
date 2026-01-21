@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/SauceLabAutomation.iml" filepath="$PROJECT_DIR$/SauceLabAutomation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pages/pages.iml" filepath="$PROJECT_DIR$/pages/pages.iml" />
     </modules>
   </component>
 </project>
