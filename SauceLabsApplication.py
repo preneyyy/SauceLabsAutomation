@@ -22,6 +22,11 @@ chrome_options = Options()
 # Add argument to start the browser maximized (full screen)
 chrome_options.add_argument("--start-maximized")
 
+#For headless and jenkins
+chrome_options.add_argument("--headless=new")
+chrome_options.add_argument("--no-sandbox")
+chrome_options.add_argument("--disable-dev-shm-usage")
+
 # Create a service object pointing to the ChromeDriver executable
 # This is the file that connects our script to the Chrome browser
 service = Service(r"C:\Users\HP\Downloads\chromedriver-win64\chromedriver-win64\chromedriver.exe")

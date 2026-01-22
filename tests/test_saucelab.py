@@ -14,6 +14,12 @@ class SauceLabsTest:
     def __init__(self):
         chrome_options = Options()
         chrome_options.add_argument("--start-maximized")
+
+#For headless and jenkins
+        chrome_options.add_argument("--headless=new")
+        chrome_options.add_argument("--no-sandbox")
+        chrome_options.add_argument("--disable-dev-shm-usage")
+
         service = Service('/Users/sumana/Downloads/chromedriver-mac-arm64 2/chromedriver')
         self.driver = webdriver.Chrome(service=service, options=chrome_options)
         self.home_page = HomePage(self.driver)
